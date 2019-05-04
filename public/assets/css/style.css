@@ -1,0 +1,59 @@
+
+h1, h2, h3, h4 {
+  font-family: 'Passion One', cursive;
+}
+h3 {
+  color: #137BB8;
+}
+header.hero {
+  background-color: #000;
+  height: 230px;
+  margin-bottom: 30px;
+}
+header.hero .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+header.hero .pageTitle {
+  color: white;
+}
+header.hero figure {
+  width: 200px;
+}
+header.hero figure img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  background-color: #F8F8F8;
+  line-height: 2.4;
+  margin: 5px;
+  padding: 5px;
+}
+li.devoured {
+  background-color: #ccc;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+button.submit {
+  background-color: #137BB8;
+  color: white;
+  padding: 15px 40px
+}

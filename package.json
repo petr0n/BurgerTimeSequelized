@@ -1,0 +1,31 @@
+{
+  "name": "burgertimesequelized",
+  "version": "1.0.0",
+  "description": "Create a list of your favorite burgers and then mark each one you've eaten to keep track.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Peter a",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.4"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petr0n/BurgerTimeSequelized.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/petr0n/BurgerTimeSequelized/issues"
+  },
+  "homepage": "https://github.com/petr0n/BurgerTimeSequelized#readme"
+}
