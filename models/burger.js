@@ -1,7 +1,13 @@
 module.exports = function(sequelize, DataTypes) {
-  var Burger = sequelize.define("Burger", {
-    // Giving the Author model a name of type STRING
-    name: DataTypes.STRING,
+  let Burger = sequelize.define("Burger", {
+    burgerName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    devoured: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    },
     createdAt: {
       type: DataTypes.DATE,
       defaultValue: sequelize.literal('NOW()')
@@ -10,9 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DATE,
       defaultValue: sequelize.literal('NOW()')
     }
-
   });
-
 
   return Burger;
 };
