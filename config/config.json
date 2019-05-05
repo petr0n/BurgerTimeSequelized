@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "o7kLUrUb18gdzQzu",
-    "database": "blogger",
+    "database": "burgerTimeSequelDb",
     "host": "localhost",
     "port": 8889,
     "dialect": "mysql"

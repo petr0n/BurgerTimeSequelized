@@ -1,4 +1,7 @@
 
+body {
+  position: relative;
+}
 h1, h2, h3, h4 {
   font-family: 'Passion One', cursive;
 }
@@ -25,6 +28,9 @@ header.hero figure img {
   max-width: 100%;
 }
 
+.container.main {
+  padding-bottom: 150px;
+}
 ul {
   list-style: none;
   padding-left: 0;
@@ -56,4 +62,18 @@ button.submit {
   background-color: #137BB8;
   color: white;
   padding: 15px 40px
+}
+
+
+footer {
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+footer .copy {
+  color: white;
+  line-height: 4;
 }

@@ -1,9 +1,9 @@
-var Burger = require("../models/burger.js");
+let db = require("../models");
 
 module.exports = function(app) {
 
     app.post('/api/burger', function(req, res) {
-        Burger.create({
+        db.Burger.create({
             burgerName: req.body.burgerName,
             devoured: req.body.devoured
         }).then(function(results) {
@@ -12,7 +12,7 @@ module.exports = function(app) {
     });
     
     app.put('/api/burger', function(req, res) {
-        Burger.update({ devoured: req.body.devoured },{
+        db.Burger.update({ devoured: req.body.devoured },{
 			where: {
 				id: req.body.id
 			}
@@ -23,7 +23,7 @@ module.exports = function(app) {
     });
     
     app.delete('/api/burger/:id',  function(req, res) {
-        Burger.destroy({
+        db.Burger.destroy({
 			where: {
 				id: req.params.id
 			}

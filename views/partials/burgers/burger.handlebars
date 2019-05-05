@@ -1,0 +1,7 @@
+<li>
+	{{#unless devoured}}
+	<button class="devour btn" data-id="{{dataValues.id}}" data-devour="{{dataValues.devoured}}" title="Mark as DEVOURED"><i class="fas fa-hamburger"></i></button>
+	{{/unless}}
+	{{dataValues.burgerName}}
+	<button class="delete-burger btn btn-danger" data-id="{{dataValues.id}}" style="float: right;"><i class="fas fa-trash"></i></button>
+</li>

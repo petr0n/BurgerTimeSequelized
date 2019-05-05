@@ -1,5 +1,5 @@
-let express = require("express");
-var Burger = require("../models/burger.js");
+
+let db = require("../models");
 
 
 // Routes
@@ -7,8 +7,12 @@ var Burger = require("../models/burger.js");
 module.exports = function(app) {
 
     app.get("/", function(req, res) {
-        Burger.findAll({}).then(function(results) {
-            res.json(results);
+        db.Burger.findAll({}).then(function(results) {
+            let hbsObject = {
+                burgers: results
+            };
+            console.log(hbsObject);
+            return res.render("index", hbsObject);
         });
     });
 
